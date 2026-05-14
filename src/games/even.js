@@ -1,15 +1,15 @@
-const isEven = (number) => number % 2 === 0;
+const isEven = number => number % 2 === 0
 
-const rule = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
+const rule = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 const getRoundData = () => {
-  const number = Math.floor(Math.random() * 100);
-  const correctAnswer = isEven(number) ? "yes" : "no";
+  const number = Math.floor(Math.random() * 100)
+  const correctAnswer = isEven(number) ? 'yes' : 'no'
 
   return {
     question: String(number),
     correctAnswer,
-  };
-};
+  }
+}
 
-export { rule, getRoundData };
+export { rule, getRoundData }
